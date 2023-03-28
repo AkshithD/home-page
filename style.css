@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    }
+    
+    .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    
+    a {
+    text-decoration: none;
+    color: #333;
+    }
+    
+    a:hover {
+    color: #0077cc;
+    }
+    
+    /* Header styles */
+    .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    }
+    
+    .site-logo {
+    height: 80px;
+    }
+    
+    .site-nav {
+    display: flex;
+    }
+    
+    .site-nav a {
+    margin-right: 20px;
+    }
+    
+    /* Lead section styles */
+    .lead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    }
+    
+    .primary-statement {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    }
+    
+    .secondary-statement {
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    }
+    
+    .lead-display {
+    flex: 1 1 50%;
+    }
+    
+    .lead-display img {
+    width: 100%;
+    }
+    
+    /* Showcase section styles */
+    .showcase {
+    padding: 50px 0;
+    }
+    
+    .showcase h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    }
+    
+    .showcase-item {
+    margin-bottom: 50px;
+    }
+    
+    .showcase-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    }
+    
+    .showcase-item img {
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    
+    .showcase-item p {
+    margin: 0;
+    }
+    
+    .showcase-item a {
+    font-weight: bold;
+    }
+    
+    .showcase-item a:hover {
+    color: #0077cc;
+    }
+    
+    /* Footer styles */
+    footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    }
