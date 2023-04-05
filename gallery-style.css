@@ -1,0 +1,115 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: #555;
+}
+
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+header {
+	background-color: #0071c5;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+/* Image gallery styles */
+.wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.image-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+img {
+	max-width: 100%;
+    width: 500px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+	background-color: #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	.wrapper {
+		max-width: 600px;
+	}
+	.image-container {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	}
+}
