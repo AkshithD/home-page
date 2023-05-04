@@ -15,11 +15,11 @@ body {
     
     a {
     text-decoration: none;
-    color: #333;
+    color: #0e50a0;
     }
     
     a:hover {
-    color: #0077cc;
+    color: #4ecc00;
     }
     
     /* Header styles */

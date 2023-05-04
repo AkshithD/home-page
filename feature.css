@@ -1,0 +1,112 @@
+/* Set the font family and background color for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Header styles */
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	border-bottom: 1px solid #ccc;
+    height:  80px;
+  }
+  
+  .site-logo {
+	height: 80px;
+  }
+  
+  .site-nav {
+	display: flex;
+  }
+  
+  .site-nav a {
+	margin-right: 20px;
+	color: #333;
+  }
+  
+  /* Style the main title */
+  h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  /* Style the section headings */
+  h2 {
+    font-size: 24px;
+  }
+  /* in the mainbody section make the paragraph 80% of the page and micro the other 20% */
+  .mainbody {
+    display: flex;
+  }
+  
+  .paragraphs {
+    width: 80%;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 10px;
+    border: rgb(87, 87, 87) 1px solid;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    
+    margin: 10px 0;
+}
+
+.links li img {
+    height: 50px;
+    width: auto;
+}
+
+.links li a {
+    color: #333;
+}
+  
+  /* Style the images */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  /* Style the paragraphs */
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  a {
+	text-decoration: none;
+	color: #4f3ccd;
+  }
+  
+  a:hover {
+	color: #0077cc;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }

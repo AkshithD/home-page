@@ -22,8 +22,8 @@ body {
 	color: #0077cc;
   }
   
-  /* Header styles */
-  .site-header {
+   /* Header styles */
+   .site-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -45,43 +45,54 @@ body {
 	color: #333;
   }
   
-  /* Introduction section styles */
-  .intro-section {
-	padding: 50px 0;
+  
+  /* Main styles */
+  h1, h2 {
+    margin-top: 0;
   }
   
-  .intro-section h2 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 30px;
+  section {
+    margin-bottom: 50px;
   }
   
-  /* Gallery section styles */
-  .gallery-section {
-	padding: 50px 0;
-  }
-  
-  .gallery-section h2 {
-	font-size: 36px;
-	font-weight: bold;
-	margin-bottom: 30px;
-  }
-  
-  .image-container {
-	display: flex;
-	flex-wrap: wrap;
-  }
-  
-  .image-container img {
-	width: 300px;
-  height: 300px;
-	margin-bottom: 20px;
+  img {
+    max-width: 100%;
+    height: auto;
   }
   
   /* Footer styles */
   footer {
-	text-align: center;
-	padding: 20px 0;
-	border-top: 1px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+    color: #666;
   }
   
+  .whole {
+    display: flex;
+  }
+  
+  .visual {
+    width: 80%;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: rgb(87, 87, 87) 1px solid;
+}
+
+.links li {
+    display: flex;
+    justify-content:left;
+    margin: 10px 0;
+}
+
+.links li img {
+    height: 50px;
+    width: auto;
+}
+
+.links li a {
+    color: #333;
+}

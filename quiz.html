@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="quiz-style.css">
+    </head>
+  <head>
+    <title>Welcome to my Quiz</title>
+  </head>
+  <div class="wrapper">
+  <header class="site-header">
+    <a href="index.html"><img class="site-logo" src="home-images/Untitled-2 copy (1).svg" alt="JWST Insights"></a>
+    <nav class="site-nav">
+    <a href="gallery.html">Gallery</a>
+    <a href="FRP.html">Further Reading Page</a>
+    <a href="feature.html">Feature Article</a>
+    <a href="visual.html">Visual Essay</a>
+    <a href="review.html">Reviews</a>
+    <a href="about.html">About</a>
+ </nav>
+</header>
+  <body>
+    <h1>Multiple Choice Quiz</h1>
+    <div class="quiz-container">
+        <form id="quiz-form">
+          <div class="question-container">
+            <h3 class="question">Question 1: What is the largest planet in our solar system?</h3>
+            <ul class="answer-options">
+            <li>
+                <input type="radio" id="q1a1" name="q1" value="A">
+                <label for="q1a1">A. Saturn</label>
+            </li>
+            <li>
+                <input type="radio" id="q1a2" name="q1" value="B">
+                <label for="q1a2">B. Jupiter</label>
+            </li>
+            <li>
+                <input type="radio" id="q1a3" name="q1" value="C">
+                <label for="q1a3">C. Earth</label>
+            </li>
+            <li>
+                <input type="radio" id="q1a4" name="q1" value="D">
+                <label for="q1a4">D. Neptune</label>
+            </li>
+            </ul>
+
+            <h3 class="question">Question 2: What is the name of the galaxy that contains our solar system?</h3>
+            <ul class="answer-options">
+            <li>
+                <input type="radio" id="q2a1" name="q2" value="A">
+                <label for="q2a1">A. Milky Way</label>
+            </li>
+            <li>
+                <input type="radio" id="q2a2" name="q2" value="B">
+                <label for="q2a2">B. Andromeda</label>
+            </li>
+            <li>
+                <input type="radio" id="q2a3" name="q2" value="C">
+                <label for="q2a3">C. Triangulum</label>
+            </li>
+            <li>
+                <input type="radio" id="q2a4" name="q2" value="D">
+                <label for="q2a4">D. Orion</label>
+            </li>
+            </ul>
+
+            <h3 class="question">Question 3: What was the first human-made object to leave our solar system?</h3>
+            <ul class="answer-options">
+            <li>
+                <input type="radio" id="q3a1" name="q3" value="A">
+                <label for="q3a1">A. Voyager 1</label>
+            </li>
+            <li>
+                <input type="radio" id="q3a2" name="q3" value="B">
+                <label for="q3a2">B. Pioneer 10</label>
+            </li>
+            <li>
+                <input type="radio" id="q3a3" name="q3" value="C">
+                <label for="q3a3">C. New Horizons</label>
+            </li>
+            <li>
+                <input type="radio" id="q3a4" name="q3" value="D">
+                <label for="q3a4">D. Cassini-Huygens</label>
+            </li>
+            </ul>
+            <h3 class="question">Question 4: What is the name of the brightest star in the night sky?</h3>
+            <ul class="answer-options">
+            <li>
+                <input type="radio" id="q4a1" name="q4" value="A">
+                <label for="q4a1">A. Sirius</label>
+            </li>
+            <li>
+                <input type="radio" id="q4a2" name="q4" value="B">
+                <label for="q4a2">B. Betelgeuse</label>
+            </li>
+            <li>
+                <input type="radio" id="q4a3" name="q4" value="C">
+                <label for="q4a3">C. Vega</label>
+            </li>
+            <li>
+                <input type="radio" id="q4a4" name="q4" value="D">
+                <label for="q4a4">D. Arcturus</label>
+            </li>
+            </ul>
+            <h3 class="question">Question 5: How long does it take for light from the Sun to reach Earth?</h3>
+            <ul class="answer-options">
+            <li>
+                <input type="radio" id="q5a1" name="q5" value="A">
+                <label for="q5a1">A. 8 minutes and 20 seconds</label>
+            </li>
+            <li>
+                <input type="radio" id="q5a2" name="q5" value="B">
+                <label for="q5a2">B. 12 minutes and 30 seconds</label>
+            </li>
+            <li>
+                <input type="radio" id="q5a3" name="q5" value="C">
+                <label for="q5a3">C. 5 minutes and 30 seconds</label>
+            </li>
+            <li>
+                <input type="radio" id="q5a4" name="q5" value="D">
+                <label for="q5a4">D. 10 minutes and 45 seconds</label>
+            </li>
+            </ul>
+          </div>
+          <button class="submit-button">Submit</button>
+        </form>
+        <span id="score"></span>
+      </div>
+    </div>
+    <script>
+    const form = document.getElementById('quiz-form');
+    const scoreDisplay = document.getElementById('score');
+    form.appendChild(scoreDisplay);
+    form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // check all the answers and calculate the number of correct answers
+    const answers = ['B','A','A','A','A'];
+    let score = 0;
+    const userAnswers = [
+        form.q1.value,
+        form.q2.value,
+        form.q3.value,
+        form.q4.value,
+        form.q5.value
+    ];
+    userAnswers.forEach((answer, index) => {
+      if (answer === answers[index]) {
+        score += 20;
+      }
+    });
+    // show the score after the Your score: text
+    scrollTo(0, 0);
+    scoreDisplay.textContent = `${score}%`;
+    scoreDisplay.classList.remove('d-none');
+
+    }); 
+
+
+    </script>
+  </body>
+</html>
